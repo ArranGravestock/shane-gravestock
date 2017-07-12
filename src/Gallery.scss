@@ -1,0 +1,28 @@
+.container {
+    border-top: #ccc solid 2px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .gallery-item {
+        margin: 1em;
+        transition: .3s opacity ease-in-out;
+        
+        img {
+            max-width: 440px;
+            width: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+}

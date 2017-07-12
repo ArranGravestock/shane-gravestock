@@ -7,10 +7,10 @@ class Nav extends Component {
             <div className="navigation">
                 <h1>Shane Gravestock</h1>
                 <ul className="menu-items">
-                    <li>Portfolio</li>
-                    <li>Showreel</li>
-                    <li>Profile/services</li>
-                    <li>Contact</li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Showreel</a></li>
+                    <li><a href="#">Profile & Services</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <ul className="social">
                     <li className="instagram"></li>

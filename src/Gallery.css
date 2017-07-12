@@ -1,0 +1,22 @@
+.container {
+  border-top: #ccc solid 2px; }
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .gallery-container .gallery-item {
+    margin: 1em;
+    transition: .3s opacity ease-in-out; }
+    .gallery-container .gallery-item img {
+      max-width: 440px;
+      width: 100%; }
+    .gallery-container .gallery-item:hover {
+      cursor: pointer;
+      opacity: 0.5; }
+
+/*# sourceMappingURL=Gallery.css.map */

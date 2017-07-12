@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import './mixins.css';
+
+@mixin noSelect($cursor) {
+    -ms-touch-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    cursor: $cursor;
+}
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
     flex-wrap: wrap;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #666;
+    background-color: #fafafa;
 
     h1 {
+        @include noSelect(default);
         text-transform: uppercase;
         letter-spacing: -1px;
         margin: .25em;
@@ -18,39 +31,75 @@
 
     .menu-items, .social {
         display: flex;
-        //justify-content: space-between;
-        //flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: wrap;
         list-style: none;
         margin: 0;
         padding: 0;
-
-        
     }
 
     .menu-items {
         li {
             margin: 1em;
+
+            a {
+                text-decoration: none;
+                transition: .2s color linear;
+                color: inherit;
+
+                &:hover {
+                    color: red;
+                }
+            }
         }
     }
 
     .social {
         li {
+            @include noSelect(pointer);
+            transition: .3s color linear;
             margin: .2em;
         }
     }
 }
 
+$social: (
+    twitter: (unicode: "\f081", hover-color: #55acee),
+    linkedin: (unicode: "\f08c", hover-color: #007bb5),
+    instagram: (unicode: "\f16d", hover-color: #125688)
+);
+
+@each $icon, $name in $social {
+    .#{$icon}:hover {
+        color: map-get($name, hover-color);
+    }
+
+    .#{$icon}::before {
+        content: map-get($name, unicode);
+    }
+}
+
 .social {
     font-family: fontawesome;
-}
-.instagram::before {
-    content: '\f16d';
+    font-size: 1.5em;
 }
 
-.linkedin::before {
-    content: '\f0e1';
+@media (max-width: 560px) {
+    .navigation {
+        .social {
+            display: none;
+        }
+    }
 }
 
-.twitter::before {
-    content: '\f099';
+@media (max-width: 465px) {
+    .navigation {
+        justify-content: center;
+        .menu-items {
+            flex-direction: column;
+            li {
+                margin: .5em;
+            }
+        }
+    }
 }

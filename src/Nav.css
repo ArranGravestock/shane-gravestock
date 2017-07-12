@@ -1,37 +1,81 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url(./mixins.css);
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #666; }
+  color: #666;
+  background-color: #fafafa; }
   .navigation h1 {
+    -ms-touch-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
     text-transform: uppercase;
     letter-spacing: -1px;
     margin: .25em;
     color: #333; }
   .navigation .menu-items, .navigation .social {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0; }
   .navigation .menu-items li {
     margin: 1em; }
+    .navigation .menu-items li a {
+      text-decoration: none;
+      transition: .2s color linear;
+      color: inherit; }
+      .navigation .menu-items li a:hover {
+        color: red; }
   .navigation .social li {
+    -ms-touch-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s color linear;
     margin: .2em; }
 
-.social {
-  font-family: fontawesome; }
-
-.instagram::before {
-  content: '\f16d'; }
-
-.linkedin::before {
-  content: '\f0e1'; }
+.twitter:hover {
+  color: #55acee; }
 
 .twitter::before {
-  content: '\f099'; }
+  content: ""; }
+
+.linkedin:hover {
+  color: #007bb5; }
+
+.linkedin::before {
+  content: ""; }
+
+.instagram:hover {
+  color: #125688; }
+
+.instagram::before {
+  content: ""; }
+
+.social {
+  font-family: fontawesome;
+  font-size: 1.5em; }
+
+@media (max-width: 560px) {
+  .navigation .social {
+    display: none; } }
+@media (max-width: 465px) {
+  .navigation {
+    justify-content: center; }
+    .navigation .menu-items {
+      flex-direction: column; }
+      .navigation .menu-items li {
+        margin: .5em; } }
 
 /*# sourceMappingURL=Nav.css.map */
