@@ -3,13 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Nav  from './Nav.js';
 import Gallery from './Gallery.js';
+import Lightbox from './Lightbox.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Nav />
-	<Gallery/>
+	      <Gallery/>
+        <Lightbox/>
       </div>
     );
   }
