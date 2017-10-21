@@ -7,28 +7,40 @@ class Gallery extends Component {
         this.state = {
             gallery: [
                 {
-                    id: 1,
-                    src: "https://unsplash.it/1920/1080",
+                    id: "-RZ86OB9hw4",
                     title: "Some title",
                     desc: "some description",
+                    type: "youtube",
                 }, 
                 {
-                    id: 2,
-                    src: "https://unsplash.it/1920/1080",
+                    id: "9V6k5POdwhI",
                     title: "another title",
                     desc: "another description",
+                    type: "youtube",
                 },
                 {
-                    id: 3,
-                    src: "https://unsplash.it/1920/1080",
+                    id: "g9UEOww8LCk",
                     title: "another title",
                     desc: "another description",
+                    type: "youtube",
                 },
                 {
-                    id: 4,
-                    src: "https://unsplash.it/1920/1080",
+                    id: "TiPQEY_EPpA",
                     title: "another title",
                     desc: "another description",
+                    type: "youtube",
+                },
+                {
+                    id: "628698431",
+                    title: "another title",
+                    desc: "another description",
+                    type: "vimeo",
+                },
+                {
+                    id: "557316843",
+                    title: "another title",
+                    desc: "another description",
+                    type: "vimeo",
                 },
             ]
         }
@@ -37,7 +49,7 @@ class Gallery extends Component {
     render() {
 
         const GalleryImages = this.state.gallery.map((image) => {
-            return <Image className="gallery-item" key={image.id} src={image.src} title={image.title} desc={image.text}/>
+            return <Image className="gallery-item" key={image.id} title={image.title} desc={image.text} id={image.id} type={image.type}/>
         })
         
         return (
@@ -51,13 +63,20 @@ class Gallery extends Component {
 class Image extends Component {
     render() {
 
-        const { className, src, title } = this.props;
-
-        return (
-            <li className={className}>
-                <img src={src} alt={title}/>
-            </li>
-        )
+        const { id, className, title, type } = this.props;
+        if (type === "youtube") {
+            return (
+                <li className={className}>
+                    <img src={`https://i1.ytimg.com/vi/${id}/maxresdefault.jpg`} alt={title}/>
+                </li>
+            )
+        } else if (type === "vimeo") {
+            return (
+                <li className={className}>
+                    <img src={`https://i.vimeocdn.com/video/${id}`} alt={title}/>
+                </li>
+            )
+        }
     }
 }
 

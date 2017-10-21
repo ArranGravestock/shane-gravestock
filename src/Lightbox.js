@@ -9,11 +9,17 @@ class Lightbox extends Component {
                     <NextItem/>
                     <PrevItem/>
                     <CloseLightbox/>
-                    <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                    <h2>A Willy's Adventure</h2>
+                    <iframe src="https://www.youtube.com/embed/-RZ86OB9hw4">
                     </iframe>
                     <div className="description">
                         <p>Some description to test this with describing what ever you wanted to describe because you're a monkey</p>
                         <p>It has multi-paragraph formatting because you're a f00king weeb</p>
+                        <p>I have no idea whathappens when this exceeds the content</p>
+                        <p>I have no idea whathappens when this exceeds the content</p>
+                        <p>I have no idea whathappens when this exceeds the content</p>
+                        <p>I have no idea whathappens when this exceeds the content</p>
+                        <p>I have no idea whathappens when this exceeds the content</p>
                         <p>I have no idea whathappens when this exceeds the content</p>
                         <p>I have no idea whathappens when this exceeds the content</p>
                         <p>I have no idea whathappens when this exceeds the content</p>
