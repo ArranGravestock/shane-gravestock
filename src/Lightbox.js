@@ -9,7 +9,7 @@ class Lightbox extends Component {
                     <NextItem/>
                     <PrevItem/>
                     <CloseLightbox/>
-                    <h2>A Willy's Adventure</h2>
+                    <h2>Stress Exam</h2>
                     <iframe src="https://www.youtube.com/embed/-RZ86OB9hw4">
                     </iframe>
                     <div className="description">
