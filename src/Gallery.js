@@ -4,47 +4,102 @@ import Lightbox from './Lightbox'
 
 const galleryItems = [
     {
-        id: "-RZ86OB9hw4",
         title: "Some title",
         desc: "some description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
-        video_url: ""
+        image_src: "./gallery/48-Hour-Sci-Fi.jpg",
+        video_url: "https://player.vimeo.com/video/212563122"
     }, 
     {
-        id: "9V6k5POdwhI",
         title: "another title",
         desc: "another description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "./gallery/BASHH.jpg",
+        video_url: "https://www.youtube.com/embed/3K_wMpiz2qE"
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/Exam-Stress.jpg",
         video_url: ""
     },
     {
-        id: "g9UEOww8LCk",
         title: "another title",
         desc: "another description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "./gallery/Fukui_Looping.jpg",
         video_url: ""
     },
     {
-        id: "TiPQEY_EPpA",
         title: "another title",
         desc: "another description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "./gallery/IM-Cycling.jpg",
         video_url: ""
     },
     {
-        id: "628698431",
         title: "another title",
         desc: "another description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "./gallery/IM-DontQuitDoIt.jpg",
         video_url: ""
     },
     {
-        id: "557316843",
         title: "another title",
         desc: "another description",
-        image_src: "/gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "./gallery/IP-Animation.jpg",
         video_url: ""
     },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/IP-Meet-The-Team.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/Lidl.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/Logo-Reveal.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/MT-Wolf-Soteria.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/Stonegate.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/ThePlaylistMattEdmondson.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/UK Power Networks_Short.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/UKPowerNetworksRadioAd.jpg",
+        video_url: ""
+    },
+    {
+        title: "another title",
+        desc: "another description",
+        image_src: "./gallery/Xbox Ad Re-Design.jpg",
+        video_url: ""
+    },
+
 ]
 
 class Gallery extends Component {
@@ -66,7 +121,7 @@ class Gallery extends Component {
 
     render() {
         const GalleryImages = galleryItems.map((image, index) => {
-            return <Image className="gallery-item" key={index} title={image.title} desc={image.text} id={image.id} image_src={image.image_src} video_url={image.video_url} onClick={() => this.setLightbox(index)}/>
+            return <Image className="gallery-item" key={index} title={image.title} desc={image.text} image_src={image.image_src} video_url={image.video_url} onClick={() => this.setLightbox(index)}/>
             
         })
         
@@ -86,7 +141,7 @@ class Image extends Component {
 
         return (
             <li className={className}>
-                <img src={image_src} alt={title} onClick={onClick}/>
+                <img src={require(image_src)} alt={title} onClick={onClick}/>
             </li>
         )
     }

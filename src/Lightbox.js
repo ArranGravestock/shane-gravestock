@@ -8,17 +8,20 @@ class Lightbox extends Component {
     
     render() {
         //onClick={() => {this.close(this.props.func)}}
+        console.log(this.props.video_url)
         return (
             <div className="lightbox-container" >
+                <NextItem pos={this.props.item.count} func={this.props.func}/>
+                <PrevItem pos={this.props.item.count} func={this.props.func}/>
                 <div className="lightbox">
-                    <NextItem pos={this.props.item.count} func={this.props.func}/>
-                    <PrevItem pos={this.props.item.count} func={this.props.func}/>
                     <CloseLightbox func={this.props.func}/>
                     <h2>{this.props.item.title}</h2>
-                    <iframe src={this.props.video_url}>
-                    </iframe>
-                    <div className="description">
-                        {this.props.item.desc}
+                    <div className="content">
+                        <iframe src={this.props.item.video_url}>
+                        </iframe>
+                        <div className="description">
+                            {this.props.item.desc}
+                        </div>
                     </div>
                 </div>
             </div>

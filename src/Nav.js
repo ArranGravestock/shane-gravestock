@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Nav.css';
+import {Lightbox} from './Lightbox'
 
 class Nav extends Component {
     render() {
