@@ -1,32 +1,24 @@
 import React, { Component } from 'react';
 import './Lightbox.css';
-
 class Lightbox extends Component {
+
+    close = (func) => {
+        func(null)
+    }
+    
     render() {
+        //onClick={() => {this.close(this.props.func)}}
         return (
-            <div className="lightbox-container">
+            <div className="lightbox-container" >
                 <div className="lightbox">
-                    <NextItem/>
-                    <PrevItem/>
-                    <CloseLightbox/>
-                    <h2>Stress Exam</h2>
-                    <iframe src="https://www.youtube.com/embed/-RZ86OB9hw4">
+                    <NextItem pos={this.props.item.count} func={this.props.func}/>
+                    <PrevItem pos={this.props.item.count} func={this.props.func}/>
+                    <CloseLightbox func={this.props.func}/>
+                    <h2>{this.props.item.title}</h2>
+                    <iframe src={this.props.video_url}>
                     </iframe>
                     <div className="description">
-                        <p>Some description to test this with describing what ever you wanted to describe</p>
-                        <p>It has multi-paragraph formatting</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
-                        <p>exceeds the content</p>
+                        {this.props.item.desc}
                     </div>
                 </div>
             </div>
@@ -35,25 +27,41 @@ class Lightbox extends Component {
 }
 
 class NextItem extends Component {
+
+    nextItem = (pos, func) => {
+        func(pos+1)
+    }
+
     render() {
         return (
-            <div className="next-item"></div>
+            
+            <div className="next-item" onClick={() => {this.nextItem(this.props.pos, this.props.func)}}></div>
         )
     }
 }
 
 class PrevItem extends Component {
+
+    prevItem = (pos, func) => {
+        func(pos-1)
+    }
+
     render() {
         return (
-            <div className="prev-item"></div>
+            <div className="prev-item" onClick={() => {this.prevItem(this.props.pos, this.props.func)}}></div>
         )
     }
 }
 
 class CloseLightbox extends Component {
+
+    close = (func) => {
+        func(null)
+    }
+
     render() {
         return (
-            <div className="close-lightbox"></div>
+            <div className="close-lightbox" onClick={() => {this.close(this.props.func)}}></div>
         )
     }
 }
