@@ -90,10 +90,26 @@
 @media (max-width: 500px) {
   .lightbox {
     height: auto;
-    top: calc( 60% / 2);
+    width: 90%;
+    top: calc(40% / 2);
+    left: 5%;
   }
   .lightbox .content .description {
     display: none;
+  }
+  .next-item {
+    top: initial;
+    bottom: 2%;
+  }
+  .next-item::before {
+    content: "\f077";
+  }
+  .prev-item {
+    top: initial;
+    bottom: 2%;
+  }
+  .prev-item::before {
+    content: "\f078";
   }
 }
 /*# sourceMappingURL=Lightbox.css.map */
