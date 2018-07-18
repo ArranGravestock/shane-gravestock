@@ -14,7 +14,7 @@ class Showreel extends Component {
                 left:0,
                 width:"100%",
                 border: 0,
-                height:"100%"}} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                height:"100%"}} frameBorder="0"  allowFullScreen></iframe>
                 </div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
             </div>

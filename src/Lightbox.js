@@ -7,8 +7,6 @@ class Lightbox extends Component {
     }
     
     render() {
-        //onClick={() => {this.close(this.props.func)}}
-        console.log(this.props.video_url)
         return (
             <div className="lightbox-container" >
                 <NextItem pos={this.props.item.count} func={this.props.func}/>
@@ -23,7 +21,7 @@ class Lightbox extends Component {
                                 top:"0",
                                 left:0,
                                 width:"100%",
-                                height:"100%"}} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                height:"100%"}} frameBorder="0" allowFullScreen>
                             </iframe>
                         </div>
                         <div className="description">
