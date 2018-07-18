@@ -1,23 +1,35 @@
 import React, { Component } from 'react';
 import './Nav.css';
 import {Lightbox} from './Lightbox'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {Gallery} from './Gallery';
+import Showreel from './pages/showreel';
+import Profile from './pages/profile.js';
+import Contact from './pages/contact.js';
 
 class Nav extends Component {
     render() {
         return (
-            <div className="navigation">
-                <h1>Shane Gravestock</h1>
-                <ul className="menu-items">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Showreel</a></li>
-                    <li><a href="#">Profile & Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul className="social">
-                    <li className="instagram"></li>
-                    <li className="linkedin"></li>
-                    <li className="twitter"></li>
-                </ul>
+            <div className="page-container">
+                <div className="navigation">
+                    <h1><Link to="/">Shane Gravestock</Link></h1>
+                    <ul className="menu-items">
+                        <li><Link to="/">Portfolio</Link></li>
+                        <li><Link to="/showreel">Showreel</Link></li>
+                        <li><Link to="/profile">Profile & Services</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                    <ul className="social">
+                        <li><a className="instagram" href="https://www.instagram.com/shanegravestock/"></a></li>
+                        <li><a className="linkedin" href="https://twitter.com/ShaneGravestock"></a></li>
+                        <li><a className="twitter" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
+                    </ul>
+                    
+                </div>
+                <Route exact path="/" component={Gallery}/>
+                <Route path="/showreel" component={Showreel}/>
+                <Route path="/profile" component={Profile}/>
+                <Route path="/contact" component={Contact}/>
             </div>
         );
     }

@@ -17,8 +17,15 @@ class Lightbox extends Component {
                     <CloseLightbox func={this.props.func}/>
                     <h2>{this.props.item.title}</h2>
                     <div className="content">
-                        <iframe src={this.props.item.video_url}>
-                        </iframe>
+                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+                            <iframe src={this.props.item.video_url} style={{
+                                position:"absolute",
+                                top:"0",
+                                left:0,
+                                width:"100%",
+                                height:"100%"}} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                        </div>
                         <div className="description">
                             {this.props.item.desc}
                         </div>

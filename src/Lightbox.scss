@@ -93,3 +93,16 @@
     top: calc(50% - 1em);
     left: calc(5% / 2);
 }
+
+@media (max-width: 500px) {
+    .lightbox {
+        height: auto;
+        top: calc( 60% / 2);
+
+        .content {
+            .description {
+                display: none;
+            }
+        }
+    }
+}
