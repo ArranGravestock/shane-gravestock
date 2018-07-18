@@ -95,7 +95,9 @@ $social: (
     font-size: 2em;
 }
 
-@media (max-width: 560px) {
+
+
+@media (max-width: 480px) {
     .navigation {
         .social {
             display: none;
@@ -103,7 +105,7 @@ $social: (
     }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 472px) {
     .navigation {
         justify-content: center;
         .menu-items {
@@ -112,5 +114,18 @@ $social: (
                 margin: .5em;
             }
         }
+    }
+}
+
+@media (max-width: 590px) {
+    .menu-items {
+        order: 2;
+    }
+}
+
+@media (max-width: 950px) {
+    .social {
+        flex-grow: 1;
+        flex-direction: row-reverse;
     }
 }
