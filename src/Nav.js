@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Nav.css';
-import {Lightbox} from './Lightbox'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 import {Gallery} from './Gallery';
 import Showreel from './pages/showreel';
 import Profile from './pages/profile.js';

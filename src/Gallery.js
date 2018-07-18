@@ -6,97 +6,97 @@ const galleryItems = [
     {
         title: "Some title",
         desc: "some description",
-        image_src: "./gallery/48-Hour-Sci-Fi.jpg",
+        image_src: "48-Hour-Sci-Fi.jpg",
         video_url: "https://player.vimeo.com/video/212563122"
     }, 
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/BASHH.jpg",
+        image_src: "BASHH.jpg",
         video_url: "https://www.youtube.com/embed/3K_wMpiz2qE"
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Exam-Stress.jpg",
+        image_src: "Exam-Stress.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Fukui_Looping.jpg",
+        image_src: "Fukui_Looping.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/IM-Cycling.jpg",
+        image_src: "IM-Cycling.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/IM-DontQuitDoIt.jpg",
+        image_src: "IM-DontQuitDoIt.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/IP-Animation.jpg",
+        image_src: "IP-Animation.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/IP-Meet-The-Team.jpg",
+        image_src: "IP-Meet-The-Team.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Lidl.jpg",
+        image_src: "Lidl.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Logo-Reveal.jpg",
+        image_src: "Logo-Reveal.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/MT-Wolf-Soteria.jpg",
+        image_src: "MT-Wolf-Soteria.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Stonegate.jpg",
+        image_src: "Stonegate.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/ThePlaylistMattEdmondson.jpg",
+        image_src: "ThePlaylistMattEdmondson.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/UK Power Networks_Short.jpg",
+        image_src: "UK Power Networks_Short.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/UKPowerNetworksRadioAd.jpg",
+        image_src: "UKPowerNetworksRadioAd.jpg",
         video_url: ""
     },
     {
         title: "another title",
         desc: "another description",
-        image_src: "./gallery/Xbox Ad Re-Design.jpg",
+        image_src: "Xbox Ad Re-Design.jpg",
         video_url: ""
     },
 
@@ -141,7 +141,7 @@ class Image extends Component {
 
         return (
             <li className={className}>
-                <img src={require(image_src)} alt={title} onClick={onClick}/>
+                <img src={require("./gallery/" + image_src)} alt={title} onClick={onClick}/>
             </li>
         )
     }
