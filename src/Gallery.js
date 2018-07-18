@@ -140,8 +140,9 @@ class Image extends Component {
         const {className, title, onClick, image_src } = this.props;
 
         return (
-            <li className={className}>
-                <img src={require("./gallery/" + image_src)} alt={title} onClick={onClick}/>
+            <li className={className} onClick={onClick}>
+                <img src={require("./gallery/" + image_src)} alt={title}/>
+                <span className="player-button">&#xf04b;</span>
             </li>
         )
     }

@@ -10,15 +10,38 @@
     .gallery-item {
         margin: 1em;
         transition: .3s opacity ease-in-out;
+        height: 100%;
+        position: relative;
         
         img {
             max-width: 440px;
-            width: 100%;
+            width: 100%;     
+        }
+        .player-button {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            color: white;
+            font-family: fontawesome;
+            font-size: 4em;
+            max-width: 440px;
+            left: calc(50% - .5em);
+            top: calc(50% - .5em);
         }
 
         &:hover {
             cursor: pointer;
             opacity: 0.5;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .gallery-container {
+        .gallery-item {
+            .player-button {
+                font-size: 2em;
+            }
         }
     }
 }

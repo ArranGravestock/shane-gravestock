@@ -19,6 +19,8 @@
   margin: 1em;
   -webkit-transition: .3s opacity ease-in-out;
   transition: .3s opacity ease-in-out;
+  height: 100%;
+  position: relative;
 }
 
 .gallery-container .gallery-item img {
@@ -26,8 +28,26 @@
   width: 100%;
 }
 
+.gallery-container .gallery-item .player-button {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  color: white;
+  font-family: fontawesome;
+  font-size: 4em;
+  max-width: 440px;
+  left: calc(50% - .5em);
+  top: calc(50% - .5em);
+}
+
 .gallery-container .gallery-item:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+@media (max-width: 440px) {
+  .gallery-container .gallery-item .player-button {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=Gallery.css.map */
