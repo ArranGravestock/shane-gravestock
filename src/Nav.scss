@@ -45,6 +45,7 @@
     }
 
     .menu-items {
+        flex-grow: 1;
         li {
             margin: 1em;
 
@@ -113,18 +114,17 @@ $social: (
                 margin: .5em;
             }
         }
-    }
-}
-
-@media (max-width: 590px) {
-    .menu-items {
-        order: 2;
+        h1 {
+            flex: initial;
+        }
     }
 }
 
 @media (max-width: 950px) {
+    .menu-items {
+        order: 2;
+    }
     .social {
         flex-grow: 1;
-        flex-direction: row-reverse;
     }
 }
