@@ -11,9 +11,8 @@
   background: #dfdfdf;
   position: fixed;
   width: 75%;
-  height: 90%;
   left: calc(25% / 2);
-  top: calc(10% / 2);
+  top: calc(20% / 2);
   -webkit-box-shadow: 0 0 10px 0px #333;
           box-shadow: 0 0 10px 0px #333;
   overflow: auto;
@@ -24,9 +23,6 @@
   text-align: left;
   padding: .5em;
   margin: 0;
-  background-color: #fff;
-  width: calc(100% - 1em);
-  border-bottom: 2px solid #ccc;
 }
 
 .lightbox .content {
@@ -47,10 +43,28 @@
   overflow-y: auto;
 }
 
+.lightbox-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+
+.lightbox-header .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .close-lightbox {
-  position: absolute;
-  right: 0;
-  top: 0;
   padding: .25em;
   color: #444;
   font-size: 2em;
@@ -59,6 +73,17 @@
 .close-lightbox::after {
   font-family: fontawesome;
   content: "\f057";
+}
+
+.info-lightbox {
+  padding: .25em;
+  color: #444;
+  font-size: 2em;
+}
+
+.info-lightbox::after {
+  font-family: fontawesome;
+  content: "\f05a";
 }
 
 .next-item {
@@ -87,29 +112,43 @@
   content: "\f053";
 }
 
-@media (max-width: 650px), (max-height: 600px) and (min-height: 480px) {
+@media (max-width: 800px), (max-height: 600px) and (min-height: 375px) and (max-width: 1050px) {
   .lightbox {
     height: auto;
     width: 90%;
     top: calc(10% / 2);
     left: 5%;
   }
-  .lightbox .content .description {
-    display: none;
-  }
   .next-item {
     top: initial;
     bottom: 2%;
   }
   .next-item::before {
-    content: "\f077";
+    content: "\f078";
   }
   .prev-item {
     top: initial;
     bottom: 2%;
   }
   .prev-item::before {
-    content: "\f078";
+    content: "\f077";
   }
+}
+
+@media (orientation: landscape) and (max-width: 750px) {
+  .lightbox {
+    height: auto;
+    width: 60%;
+    top: calc(10% / 2);
+    left: 20%;
+  }
+}
+
+.desc-toggle-false {
+  display: none;
+}
+
+.desc-toggle-true {
+  display: inherit;
 }
 /*# sourceMappingURL=Lightbox.css.map */

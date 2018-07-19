@@ -12,9 +12,8 @@
     background: #dfdfdf;
     position: fixed;
     width: 75%;
-    height: 90%;
     left: calc(25% / 2);
-    top: calc(10% / 2);
+    top: calc(20% / 2);
     box-shadow: 0 0 10px 0px #333;
     overflow: auto;
 
@@ -23,9 +22,7 @@
         text-align: left;
         padding: .5em;
         margin: 0;
-        background-color: #fff;
-        width: calc(100% - 1em);
-        border-bottom: 2px solid #ccc;
+
     }
 
     .content {
@@ -48,14 +45,37 @@
     
 }
 
+.lightbox-header {
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .close-lightbox {
-    position: absolute;
-    right: 0;
-    top: 0;
 
     &::after {
         font-family: fontawesome;
         content: "\f057";
+    }
+    padding: .25em;
+    color: #444;
+    font-size: 2em;
+    //background: #eee;
+    //border-radius: 0 0 0 25%;
+}
+
+.info-lightbox {
+
+    &::after {
+        font-family: fontawesome;
+        content: "\f05a";
     }
     padding: .25em;
     color: #444;
@@ -88,35 +108,44 @@
     left: calc(5% / 2);
 }
 
-@media (max-width: 650px), (max-height: 600px) and (min-height: 480px) {
+@media (max-width: 800px), (max-height: 600px) and (min-height: 375px) and (max-width: 1050px) {
     .lightbox {
         height: auto;
         width: 90%;
         top: calc(10% / 2);
         left: 5%;
-
-        .content {
-            .description {
-                display: none;
-            }
-        }
     }
+
     .next-item {
         top: initial;
         bottom: 2%;
         &::before {
-            content: "\f077";
+            content: "\f078";
         }
-        
     }
 
     .prev-item {
         top: initial;
         bottom: 2%;
         &::before {
-            content: "\f078";
+            content: "\f077";
         }
-       
     }
+}
 
+@media (orientation: landscape) and (max-width: 750px) {
+    .lightbox {
+        height: auto;
+        width: 60%;
+        top: calc(10% / 2);
+        left: 20%;
+    }
+}
+
+.desc-toggle-false {
+    display: none;
+}
+
+.desc-toggle-true {
+    display: inherit;
 }

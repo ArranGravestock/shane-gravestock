@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import './Lightbox.css';
 class Lightbox extends Component {
 
+    state = {
+        toggleInfo: false
+    }
+
     close = (func) => {
         func(null)
+    }
+
+    toggleDesc = () => {
+        this.setState({
+            toggleInfo: !this.state.toggleInfo
+        })
     }
     
     render() {
@@ -13,8 +23,14 @@ class Lightbox extends Component {
                 <NextItem pos={this.props.item.count} func={this.props.func}/>
                 <PrevItem pos={this.props.item.count} func={this.props.func}/>
                 <div className="lightbox">
-                    <CloseLightbox func={this.props.func}/>
+                <div className="lightbox-header">
                     <h2>{this.props.item.title}</h2>
+                    <div className="controls">
+                        <Info func={this.toggleDesc}/>
+                        <CloseLightbox func={this.props.func}/>
+                    </div>
+                </div>
+
                     <div className="content">
                         <div className={`_${this.props.item.aspect_ratio}`} style={{position:"relative"}}>
                             <iframe src={this.props.item.video_url} style={{
@@ -25,7 +41,7 @@ class Lightbox extends Component {
                                 height:"100%"}} frameBorder="0" allowFullScreen>
                             </iframe>
                         </div>
-                        <div className="description">
+                        <div className={`description desc-toggle-${this.state.toggleInfo}`}>
                             {this.props.item.desc}
                         </div>
                     </div>
@@ -74,4 +90,14 @@ class CloseLightbox extends Component {
         )
     }
 }
+
+class Info extends Component {
+
+    render() {
+        return (
+            <div className="info-lightbox" onClick={() => {this.props.func()}}></div>
+        )
+    }
+}
 export default Lightbox;
+
