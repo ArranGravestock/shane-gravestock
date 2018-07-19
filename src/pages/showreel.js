@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-
+import './showreel.css'
 class Showreel extends Component {
     render() {
         return (
             <div
             style={{
-                padding: "1em 5% 0 5%"
+                padding: "1em 1em 1em 1em",
             }}>
-                <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+                <div className="showreel-container" style={{position:"relative"}}>
                 <iframe src="https://player.vimeo.com/video/107805398" style={{
                 position:"absolute",
                 top:0,
