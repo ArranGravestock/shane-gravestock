@@ -48,6 +48,8 @@ footer ul li {
 }
 
 footer ul li a {
+  -webkit-transition: .3s color linear;
+  transition: .3s color linear;
   text-decoration: none;
   color: #666;
 }

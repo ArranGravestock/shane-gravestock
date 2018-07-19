@@ -5,6 +5,7 @@ import {Gallery} from './Gallery';
 import Showreel from './pages/showreel';
 import Profile from './pages/profile.js';
 import Contact from './pages/contact.js';
+import Thanks from './pages/thanks.js';
 
 class Nav extends Component {
     render() {
@@ -19,9 +20,9 @@ class Nav extends Component {
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                     <ul className="social">
-                        <li><a className="instagram" href="https://www.instagram.com/shanegravestock/"></a></li>
-                        <li><a className="linkedin" href="https://twitter.com/ShaneGravestock"></a></li>
-                        <li><a className="twitter" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
+                        <li><a className="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/shanegravestock/"></a></li>
+                        <li><a className="linkedin" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ShaneGravestock"></a></li>
+                        <li><a className="twitter" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
                     </ul>
                     
                 </div>
@@ -29,6 +30,7 @@ class Nav extends Component {
                 <Route path="/showreel" component={Showreel}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/thanks" component={Thanks}/>
             </div>
         );
     }

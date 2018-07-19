@@ -17,9 +17,9 @@ class App extends Component {
           Shane Gravestock 2018 &#x00a9;
         </p>
         <ul className="social">
-            <li><a className="instagram" href="https://www.instagram.com/shanegravestock/"></a></li>
-            <li><a className="linkedin" href="https://twitter.com/ShaneGravestock"></a></li>
-            <li><a className="twitter" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
+            <li><a className="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/shanegravestock/"></a></li>
+            <li><a className="linkedin" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ShaneGravestock"></a></li>
+            <li><a className="twitter" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
         </ul>
        </footer>
       </div>

@@ -64,10 +64,11 @@
         li {
             a{
                 @include noSelect(pointer);
-                color: inherit;
-                transition: .3s color linear;
+
+                
                 margin: .2em;
                 text-decoration: none;
+                color: #666;
             }
         
         }

@@ -9,25 +9,29 @@ class Contact extends Component {
                 <h2>Contact me!</h2>
                 <p>Leave me a message about stuff...</p>
             </div>
-                <form className="contact-form">
+                <form className="contact-form" action="https://formspree.io/shane@gravestock.net">
                 <label>
                     Name
-                    <input></input>
+                    <input name="name" type="text"></input>
                 </label>
                 <label>
                     Email
-                    <input></input>
+                    <input name="_replyto" type="email"></input>
                     </label>
                 <label>
                     Subject
-                    <input></input>
+                    <input name="_subject" type="text"></input>
                     </label>
                 <label>
                     Message
-                    <textarea></textarea>
+                    <textarea name="message" type="text"></textarea>
                 </label>
-                    <button type="button">Submit</button>
+                    <button type="submit" value="Send">Submit</button>
                 </form>
+
+                <input type="text" name="_gotcha" style={{display:"none"}} />
+                <input type="hidden" name="_next" value="http://localhost:3000/thanks" />
+                
             </div>
         );
     }

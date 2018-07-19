@@ -22,10 +22,12 @@ footer {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  
   p {
     margin: auto 0;
     padding-left: 1em;
   }
+
   ul {
     display: flex;
     margin: 0;
@@ -34,6 +36,7 @@ footer {
       list-style: none;
       padding: .2em;
       a {
+        transition: .3s color linear;
         text-decoration: none;
         color: #666;
       }

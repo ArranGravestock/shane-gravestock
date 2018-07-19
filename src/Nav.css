@@ -70,11 +70,9 @@
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
-  color: inherit;
-  -webkit-transition: .3s color linear;
-  transition: .3s color linear;
   margin: .2em;
   text-decoration: none;
+  color: #666;
 }
 
 .twitter:hover {
