@@ -11,6 +11,17 @@ class App extends Component {
        <Router>
         <Nav/>
        </Router>
+
+       <footer className="footer-social">
+       <p>
+          Shane Gravestock 2018 &#x00a9;
+        </p>
+        <ul className="social">
+            <li><a className="instagram" href="https://www.instagram.com/shanegravestock/"></a></li>
+            <li><a className="linkedin" href="https://twitter.com/ShaneGravestock"></a></li>
+            <li><a className="twitter" href="https://www.linkedin.com/in/shanegravestock/"></a></li>
+        </ul>
+       </footer>
       </div>
     );
   }
