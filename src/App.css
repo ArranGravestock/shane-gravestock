@@ -15,6 +15,10 @@
   color: white;
 }
 
+.page-container {
+  min-height: calc(100vh - 2.9em);
+}
+
 .App-intro {
   font-size: large;
 }
@@ -27,7 +31,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1em;
 }
 
 footer p {
