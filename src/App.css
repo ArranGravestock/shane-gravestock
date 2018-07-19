@@ -27,6 +27,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 1em;
 }
 
 footer p {
@@ -52,11 +53,5 @@ footer ul li a {
   transition: .3s color linear;
   text-decoration: none;
   color: #666;
-}
-
-@media (min-width: 480px) {
-  footer {
-    display: none;
-  }
 }
 /*# sourceMappingURL=App.css.map */
