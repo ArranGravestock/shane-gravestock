@@ -9,7 +9,7 @@ class Contact extends Component {
                 <h2>Contact me!</h2>
                 <p>Leave me a message about stuff...</p>
             </div>
-                <form className="contact-form" action="https://formspree.io/shane@gravestock.net">
+                <form className="contact-form" method="POST" action="https://formspree.io/shane@gravestock.net">
                 <label>
                     Name
                     <input name="name" type="text"></input>

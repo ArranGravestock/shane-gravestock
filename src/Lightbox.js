@@ -7,6 +7,7 @@ class Lightbox extends Component {
     }
     
     render() {
+
         return (
             <div className="lightbox-container" >
                 <NextItem pos={this.props.item.count} func={this.props.func}/>
@@ -15,7 +16,7 @@ class Lightbox extends Component {
                     <CloseLightbox func={this.props.func}/>
                     <h2>{this.props.item.title}</h2>
                     <div className="content">
-                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+                        <div className={`_${this.props.item.aspect_ratio}`} style={{position:"relative"}}>
                             <iframe src={this.props.item.video_url} style={{
                                 position:"absolute",
                                 top:"0",

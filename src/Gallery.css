@@ -45,6 +45,30 @@
   opacity: 0.5;
 }
 
+._16-9 {
+  padding: 56.25% 0 0 0;
+}
+
+._1-1 {
+  padding: 100% 0 0 0;
+}
+
+._4-3 {
+  padding-top: 75%;
+}
+
+._3-2 {
+  padding-top: 66.66%;
+}
+
+._8-5 {
+  padding-top: 62.5%;
+}
+
+._2-39-1 {
+  padding: 42.18% 0 0 0;
+}
+
 @media (max-width: 440px) {
   .gallery-container .gallery-item .player-button {
     font-size: 2em;
