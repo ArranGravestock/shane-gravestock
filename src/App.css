@@ -23,7 +23,7 @@
   font-size: large;
 }
 
-footer {
+.footer-social {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,12 +33,12 @@ footer {
           justify-content: space-between;
 }
 
-footer p {
+.footer-social p {
   margin: auto 0;
   padding-left: 1em;
 }
 
-footer ul {
+.footer-social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,12 +46,12 @@ footer ul {
   padding: 0;
 }
 
-footer ul li {
+.footer-social ul li {
   list-style: none;
   padding: .2em;
 }
 
-footer ul li a {
+.footer-social ul li a {
   -webkit-transition: .3s color linear;
   transition: .3s color linear;
   text-decoration: none;

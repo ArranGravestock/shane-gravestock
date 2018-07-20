@@ -1,0 +1,35 @@
+.container-profile header {
+  padding: 1em;
+}
+
+.container-profile section {
+  padding: 1em;
+  text-align: left;
+}
+
+.container-profile section p {
+  margin: 0;
+}
+
+.company-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company-grid img {
+  padding: 1em;
+  -webkit-transition: .2s ease-in-out transform;
+  transition: .2s ease-in-out transform;
+}
+
+.company-grid img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+/*# sourceMappingURL=gallery-grid.css.map */

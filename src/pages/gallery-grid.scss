@@ -1,0 +1,29 @@
+.container-profile {
+    header {
+        padding: 1em;
+    }
+
+    section {
+        padding: 1em;
+        text-align: left;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.company-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        padding: 1em;
+        transition: .2s ease-in-out transform;
+    }
+
+    img:hover {
+        transform: scale(1.2, 1.2)
+    }
+}
