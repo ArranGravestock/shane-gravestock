@@ -7,7 +7,7 @@ class Contact extends Component {
             <div className="contact-wrapper">
             <div className="header">
                 <h2>Contact me!</h2>
-                <p>Leave me a message about stuff...</p>
+                <p>Leave me a message and we'll talk shortly!</p>
             </div>
                 <form className="contact-form" method="POST" action="https://formspree.io/shane@gravestock.net">
                 <label>
@@ -30,7 +30,7 @@ class Contact extends Component {
                 </form>
 
                 <input type="text" name="_gotcha" style={{display:"none"}} />
-                <input type="hidden" name="_next" value="http://localhost:3000/thanks" />
+                <input type="hidden" name="_next" value="shanegravestock.co.uk/thanks" />
                 
             </div>
         );
