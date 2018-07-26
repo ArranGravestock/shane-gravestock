@@ -4,52 +4,72 @@ import './gallery-grid.css'
 
 let galleryItems = [
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "BASHH.jpg",
+        external_url: "https://www.youtube.com/watch?v=3K_wMpiz2qE"
+    },
+    {
+        src: "Cape Films.jpg",
+        external_url: "https://www.youtube.com/watch?v=jiYP6urAECk"
+    },
+    {
+        src: "CBBC.jpg",
+        external_url: "https://www.bbc.co.uk/cbbc/shows/the-playlist"
+    },
+    {
+        src: "Cinema Lumina.jpg",
+        external_url: "https://www.cinemalumina.com/"
+    },
+    {
+        src: "Founders Factory.jpg",
+        external_url: "https://foundersfactory.com/"
+    },
+    {
+        src: "Foundry-42.jpg",
+        external_url: "https://cloudimperiumgames.com/"
+    },
+    {
+        src: "Instinctif Partners.jpg",
+        external_url: "https://instinctif.com/uk/"
+    },
+    {
+        src: "Irwin Mitchell.jpg",
+        external_url: "https://www.irwinmitchell.com/"
     },
     {
         src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        external_url: "https://www.jumpstartproductions.co.uk/"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "Lidl.jpg",
+        external_url: "https://www.youtube.com/watch?v=g9UEOww8LCk"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "Proper Charlie Productions.jpg",
+        external_url: "https://www.facebook.com/propercharlieuk/"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "Shopmium.jpg",
+        external_url: "https://www.shopmium.com/uk"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "Tony Burke.jpg",
+        external_url: "https://www.tonyburke.org/"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "UK Power Networks.jpg",
+        external_url: "https://vimeo.com/267422697/64caa64320"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "United Magic Studios.jpg",
+        external_url: "http://www.unitedmagic.co.uk/"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "Walt-Disney.jpg",
+        external_url: "https://www.thewaltdisneycompany.com/"
     },
     {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
-    },
-    {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
-    },
-    {
-        src: "Jump Start Productions.jpg",
-        external_url: "https://youtube.com"
+        src: "York-St-John-University.jpg",
+        external_url: "https://vimeo.com/214697360"
     },
 ]
 
