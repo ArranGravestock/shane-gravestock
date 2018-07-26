@@ -5,7 +5,7 @@ import Lightbox from './Lightbox'
 const galleryItems = [
     {
         title: "Some title",
-        desc: "some description",
+        desc: "some <b>test</b>description",
         image_src: "48-Hour-Sci-Fi.jpg",
         video_url: "https://player.vimeo.com/video/212563122",
         aspect_ratio: "2-39-1"
@@ -138,7 +138,6 @@ class Gallery extends Component {
     render() {
         const GalleryImages = galleryItems.map((image, index) => {
             return <Image className={`gallery-item`} aspect_ratio={image.aspect_ratio} key={index} title={image.title} desc={image.text} image_src={image.image_src} video_url={image.video_url} onClick={() => this.setLightbox(index)}/>
-            
         })
         
         return (

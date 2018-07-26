@@ -1,4 +1,8 @@
 .container-profile {
+
+    max-width: 800px;
+    margin: 0 auto;
+
     header {
         padding: 1em;
     }
@@ -16,11 +20,14 @@
 .company-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     img {
-        padding: 1em;
+        max-width: 100px;
+        max-height: 100px;
+        margin: .5em;
         transition: .2s ease-in-out transform;
+        background-color: #ccc;
     }
 
     img:hover {

@@ -1,53 +1,54 @@
 import React, { Component } from 'react';
 import './gallery-grid.css'
 
+
 let galleryItems = [
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
     {
-        src: "https://via.placeholder.com/100x100",
+        src: "Jump Start Productions.jpg",
         external_url: "https://youtube.com"
     },
 ]
@@ -55,7 +56,7 @@ let galleryItems = [
 class Profile extends Component {
     render() {
         return (
-            <div className="container-profile" style={{maxWidth: "800px", margin: "0 auto"}}>
+            <div className="container-profile">
                 <header>
                     <img alt="header-banner" src="https://via.placeholder.com/800x250" width="100%" height="auto"/>
                 </header>
@@ -66,7 +67,7 @@ class Profile extends Component {
                 </section>
                 <footer className="company-grid">
                     {galleryItems.map((image, index) => {
-                        return <GalleryItem src={image.src} external_url={image.external_url}/>
+                        return <GalleryItem src={require("../companies/" + image.src)} external_url={image.external_url}/>
                     })}
                 </footer>
             </div>
@@ -78,7 +79,7 @@ class GalleryItem extends Component {
     render() {
         return (
             <div>
-                <a href={this.props.external_url} target="_blank" rel="noopener noreferrer"><img alt="company-logo" src={this.props.src}/></a>
+                <a href={this.props.external_url}  target="_blank" rel="noopener noreferrer"><img alt="company-logo" width="100%" src={this.props.src}/></a>
             </div>
         )
     }

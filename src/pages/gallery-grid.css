@@ -1,3 +1,8 @@
+.container-profile {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .container-profile header {
   padding: 1em;
 }
@@ -17,15 +22,18 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .company-grid img {
-  padding: 1em;
+  max-width: 100px;
+  max-height: 100px;
+  margin: .5em;
   -webkit-transition: .2s ease-in-out transform;
   transition: .2s ease-in-out transform;
+  background-color: #ccc;
 }
 
 .company-grid img:hover {
