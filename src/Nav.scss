@@ -103,7 +103,7 @@ $social: (
     }
 }
 
-@media (max-width: 497px) {
+@media (max-width: 453px) {
     .navigation {
         justify-content: center;
         .menu-items {
@@ -115,13 +115,13 @@ $social: (
     }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 906px) {
     .footer-social {
         display: none;
     }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 905px) {
     .navigation {
         .social {
             display: none;

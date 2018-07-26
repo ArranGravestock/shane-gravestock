@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 497px) {
+@media (max-width: 453px) {
   .navigation {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -135,13 +135,13 @@
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 906px) {
   .footer-social {
     display: none;
   }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 905px) {
   .navigation .social {
     display: none;
   }

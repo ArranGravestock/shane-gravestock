@@ -16,7 +16,7 @@ class Nav extends Component {
                     <ul className="menu-items">
                         <li><Link to="/">Portfolio</Link></li>
                         <li><Link to="/showreel">Showreel</Link></li>
-                        <li><Link to="/profile">Profile & Services</Link></li>
+                        <li><Link to="/profile">Profile</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                     <ul className="social">
