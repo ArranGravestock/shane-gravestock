@@ -57,7 +57,7 @@ class Profile extends Component {
         return (
             <div className="container-profile" style={{maxWidth: "800px", margin: "0 auto"}}>
                 <header>
-                    <img src="https://via.placeholder.com/800x250" width="100%" height="auto"/>
+                    <img alt="header-banner" src="https://via.placeholder.com/800x250" width="100%" height="auto"/>
                 </header>
                 <section>
                     <p>Hello there! I’m Shane Gravestock, based in Brighton and London. I’m available to hire as a freelance sound recordist, sound designer and sound mixer for corporate, commercial, short and feature films. Please get in touch using the contact page.</p>
@@ -78,7 +78,7 @@ class GalleryItem extends Component {
     render() {
         return (
             <div>
-                <a href={this.props.external_url} target="_blank" rel="noopener noreferrer"><img src={this.props.src}/></a>
+                <a href={this.props.external_url} target="_blank" rel="noopener noreferrer"><img alt="company-logo" src={this.props.src}/></a>
             </div>
         )
     }
