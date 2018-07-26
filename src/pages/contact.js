@@ -30,7 +30,7 @@ class Contact extends Component {
                 </form>
 
                 <input type="text" name="_gotcha" style={{display:"none"}} />
-                <input type="hidden" name="_next" value="shanegravestock.co.uk/thanks" />
+                <input type="hidden" name="_next" value="https://shanegravestock.co.uk/thanks" />
                 
             </div>
         );
