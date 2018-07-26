@@ -97,7 +97,7 @@ const galleryItems = [
     },
     {
         title: "Xbox Ad – Re-design",
-        desc: "another description",
+        desc: "Re-design: Sound effects and mix",
         image_src: "Xbox Ad Re-Design.jpg",
         video_url: "https://player.vimeo.com/video/254230405",
         aspect_ratio: "16-9"
