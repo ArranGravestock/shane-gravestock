@@ -15,9 +15,8 @@ after_success: |
     git config user.email "arran@gravestock.net"
     git remote add upstream "https://$GITHUB_API_KEYN@github.com/ArranGravestock/shane-gravestock.git"
     git fetch upstream
-    git reset upstream/gh-pages
-    cd "$TRAVIS_BUILD_DIR"
+    git reset upstream/production
     git add -A .
     git commit -m "rebuild pages"
-    git push -q upstream HEAD:gh-pages
+    git push -q upstream HEAD:production
   fi
