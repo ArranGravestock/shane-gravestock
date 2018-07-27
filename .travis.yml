@@ -10,9 +10,6 @@ script:
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
     cd $TRAVIS_BUILD_DIR/build
-    ls $TRAVIS_BUILD_DIR
-    echo pwd
-    pwd
     git init
     git config user.name "ArranGravestock"
     git config user.email "arran@gravestock.net"
