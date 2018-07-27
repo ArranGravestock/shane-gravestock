@@ -13,7 +13,7 @@ after_success: |
     git init
     git config user.name "ArranGravestock"
     git config user.email "arran@gravestock.net"
-    git remote add upstream "https://$GITHUB_API_KEYN@github.com/<me>/shane-gravestock.git"
+    git remote add upstream "https://$GITHUB_API_KEYN@github.com/ArranGravestock/shane-gravestock.git"
     git fetch upstream
     git reset upstream/gh-pages
     cd "$TRAVIS_BUILD_DIR"
