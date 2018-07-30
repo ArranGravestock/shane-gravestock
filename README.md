@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ArranGravestock/shane-gravestock.svg?branch=master)](https://travis-ci.org/ArranGravestock/shane-gravestock)
+
 # Shane Gravestock Portfolio
 A React.js based website that allows for easy reuse of components, so that it can stay up to date easily and will be readily available without much downtime
 
