@@ -11,13 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
     label {
         text-align: left;
         font-family: arial;
         font-size: 1em;
         line-height: 1.5;
-        input, textarea {
+        input,
+        textarea {
             box-sizing: border-box;
             width: 100%;
             border-style: solid;
@@ -29,14 +29,12 @@
             font-family: arial;
             font-size: 1em;
         }
-
         textarea {
             resize: vertical;
             line-height: 1.75;
             min-height: 200px;
         }
     }
-    
     button {
         width: 100%;
         background-color: #666;

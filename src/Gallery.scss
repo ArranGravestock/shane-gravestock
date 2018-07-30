@@ -6,16 +6,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
     .gallery-item {
         margin: 1em;
         transition: .3s opacity ease-in-out;
         height: 100%;
         position: relative;
-        
         img {
             max-width: 440px;
-            width: 100%;     
+            width: 100%;
         }
         .player-button {
             display: inline-block;
@@ -28,7 +26,6 @@
             left: calc(50% - .5em);
             top: calc(50% - .5em);
         }
-
         &:hover {
             cursor: pointer;
             opacity: 0.5;
@@ -40,6 +37,7 @@
 ._16-9 {
     padding: 56.25% 0 0 0;
 }
+
 ._1-1 {
     padding: 100% 0 0 0;
 }

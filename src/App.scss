@@ -17,6 +17,7 @@
 .page-container {
   min-height: calc(100vh - 2.9em);
 }
+
 .App-intro {
   font-size: large;
 }
@@ -25,12 +26,10 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  
   p {
     margin: auto 0;
     padding-left: 1em;
   }
-
   ul {
     display: flex;
     margin: 0;

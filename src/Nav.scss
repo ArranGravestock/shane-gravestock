@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import './mixins.scss';
-
 @mixin noSelect($cursor) {
     -ms-touch-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-
     cursor: $cursor;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-between;
-    //align-items: center;
+    justify-content: space-between; //align-items: center;
     flex-wrap: wrap;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #666;
     background-color: #fafafa;
     border-bottom: #ccc solid 2px;
-
     h1 {
         @include noSelect(default);
         text-transform: uppercase;
         letter-spacing: -1px;
         margin: .25em;
         color: #333;
-
         a {
             color: inherit;
             text-decoration: none;
         }
     }
-
-    .menu-items, .social {
+    .menu-items,
+    .social {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -43,24 +38,20 @@
         margin: 0;
         padding: 0;
     }
-
     .menu-items {
         flex-grow: 1;
         li {
             margin: 1em;
-
             a {
                 text-decoration: none;
                 transition: .2s color linear;
                 color: inherit;
-
                 &:hover {
                     color: red;
                 }
             }
         }
     }
-
     ul {
         li {
             a {
@@ -74,17 +65,14 @@
     }
 }
 
-$social: (
-    twitter: (unicode: "\f081", hover-color: #55acee),
-    linkedin: (unicode: "\f08c", hover-color: #007bb5),
-    instagram: (unicode: "\f16d", hover-color: #125688)
-);
-
-@each $icon, $name in $social {
+$social: ( twitter: (unicode: "\f081", hover-color: #55acee),
+linkedin: (unicode: "\f08c", hover-color: #007bb5),
+instagram: (unicode: "\f16d", hover-color: #125688));
+@each $icon,
+$name in $social {
     .#{$icon}:hover {
         color: map-get($name, hover-color);
     }
-
     .#{$icon}::before {
         content: map-get($name, unicode);
     }
