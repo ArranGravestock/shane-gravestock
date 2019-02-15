@@ -10,5 +10,3 @@ Being future proof is a big concern - I've made it so that in the future, if nec
 
 ## Speed
 Loading videos can be very strenuous, and the old wordpress based website was extremely slow - as well as making it hard to add new content. Two of the main issues the client had at hand, which can be easily done now - with a one page styled website which is loaded as fast as possible to ensure that possible clients do not leave their page
-
-
